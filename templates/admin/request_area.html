@@ -1,0 +1,124 @@
+{% extends "admin/admin.html" %}
+
+{% block requests_area %}
+
+ <script type="text/javascript">
+            function accept()
+            {   
+             
+            var ride_id=document.getElementById('sender_id').innerHTML;
+            var package_id=document.getElementById('package_id').innerHTML;
+            var id_data={'id':button_ref.id};
+
+                    $.ajax({
+            type: 'post',
+            url: '/ride_request',
+            data: JSON.stringify(id_data),
+            contentType: 'application/json',
+ 
+            
+            success: function (data) { alert("Ride Request Sending...");
+
+                             window.location.href='/request'
+                             } });
+
+
+
+
+
+                // var xhttp= new XMLHttpRequest();
+                // xhttp.open("POST",'/ride_request',true);
+                // xhttp.send();
+            }
+</script>
+
+<h3 style="padding:15px;"> Ride Requests </h3>
+<div style="padding:25px;  background-color:#eee;" class="col-md-12">
+<form method="post"  style= "background-color:#fff"onsubmit="return confirm('Are you sure to cancel the ride?')" > <label> Ride Id:</label><input type="text" name="ride_id" required> &nbsp; <label>  Sender Id:</label><input type="text" name="sender_id" required> <input  type="submit" value="Accept ride" > </form>
+
+<h4> Incoming Ride Requests</h4>
+{% for ride in rides %}
+ 
+<div class="col-md-4" style=" background-color:#ddd; margin:5px; height:250px;">
+
+<h3> Ride Details </h3>
+
+
+<label> Ride Id:</label><p id="ride_id">{{ ride.ride_id }}</p> 
+<label>From:</label> {{ ride.from_place }} </br>
+<label>To:</label>{{ ride.to_place }} </br>
+<label>Date:</label>{{ ride.date }} </br>
+<label>Status:</label> {% if ride.accept==0 %} <p style="color:red"> Not Accepted</p>{% else %} <p style="color:green"> Accepted</p> {% endif %} </br>
+  
+  </div>
+
+<div class="col-md-4" style=" background-color:#ddd; margin:5px; height:250px;">
+ 
+ <h3> Sender Details  </h3>
+ <label> Sender Id:</label><p id="sender_id">{{ ride.sender }}</p> 
+
+ <label> Name: </label> {{ ride.firstname }} &nbsp; {{ ride.lastname }} <br/>
+ <label> Mobile:</label>{{ ride.mobile }}<br/>
+ <label> Address:</label> {{ ride.address }}<br/>
+ <label> District:</label>{{ ride.district }} <br/>
+ <label> PIN :</label> {{ ride.pin }} <br/>
+ 
+ 
+	 
+
+</div>
+<hr style="background-color:#000; ">
+{% else %}
+	<div class="col-md-4" >
+	<p> No ride requests</p>
+	</div>
+	<hr>
+{% endfor %} 
+
+</div>
+
+<div style="margin:5px;">
+<h4> Outgoing Ride Requests</h4>
+{% for ride in packages %}
+ 
+<div class="col-md-4" style=" background-color:#ddd; margin:5px; height:250px;">
+
+<h3> Ride Details </h3>
+
+
+<label> Ride Id:</label><p id="ride_id">{{ ride.ride_id }}</p> 
+<label>From:</label> {{ ride.from_place }} </br>
+<label>To:</label>{{ ride.to_place }} </br>
+<label>Date:</label>{{ ride.date }} </br>
+<label>Status:</label> {% if ride.accept==0 %} <p style="color:red"> Not Accepted</p>{% else %} <p style="color:green"> Accepted</p> {% endif %} </br>
+  
+  </div>
+
+<div class="col-md-4" style=" background-color:#ddd; margin:5px; height:250px;">
+ 
+ <h3> Sender Details  </h3>
+ <label> Sender Id:</label><p id="sender_id">{{ ride.sender }}</p> 
+
+ <label> Name: </label> {{ ride.firstname }} &nbsp; {{ ride.lastname }} <br/>
+ <label> Mobile:</label>{{ ride.mobile }}<br/>
+ <label> Address:</label> {{ ride.address }}<br/>
+ <label> District:</label>{{ ride.district }} <br/>
+ <label> PIN :</label> {{ ride.pin }} <br/>
+ 
+ 
+	 
+
+</div>
+<hr style="background-color:#000; ">
+{% else %}
+	<div class="col-md-4" >
+	<p> No ride requests</p>
+	</div>
+	 
+{% endfor %} 
+</div>
+ 
+ 
+
+ 
+{% endblock %}

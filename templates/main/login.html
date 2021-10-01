@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>UDIO SIGNIN</title>
+	<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700|Lato:400,100,300,700,900' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="{{ url_for('static',filename='css/login.css') }}">
+</head>
+<body>
+	<div class="container">
+		<div class="top">
+			<h1 id="title" class="hidden">ARE YOU ONE OF <span id="logo"><b><b>US?</br>WELCOME </span></b></b>BACK</h1>
+		</div>
+		<div class="login-box animated fadeInUp">
+			<div class="box-header">
+				<h2>Log In</h2>
+			</div>
+
+		<form method="post" >
+		<div>
+									<!-- Display flashed messages -->
+      {% with msgs = get_flashed_messages() %}
+        {% if msgs %}
+          {%- for msg in msgs %}
+            <div class="alert alert-info" style="color:white">
+              {{ msg }}
+            </div>
+          {% endfor -%}
+        {% endif %}
+      {% endwith %}
+
+		</div>
+			<label for="username">Username</label>
+			<br/>
+			<input type="text" id="username" name="username" size="45">
+			<br/>
+			<label for="password">Password</label>
+			<br/>
+			<input type="password" id="password" name="password" size="45">
+			<br/>
+			<button type="submit">Sign In</button>
+			<br/>
+		</form>
+			<a href="#"><p class="small">Forgot your password?</p></a>
+			<a href="/reg"><p id="signup">Sign Up</p></a>
+		</div>
+	</div>
+</body>
+</html>

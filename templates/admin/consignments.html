@@ -1,0 +1,60 @@
+{% extends "admin/admin.html" %}
+
+{% block consignments %}
+
+<h3 style="padding:15px;"> Current Consignments </h3>
+<div style="padding:15px;">
+<form method="post" onsubmit="return confirm('Are you sure to cancel the ride?')" > <label> Ride Id:</label><input type="text" name="ride_id" required> <input  type="submit" value="cancel ride" > </form>
+<h4> Rides </h4>
+{% for ride in rides %}
+ 
+<div class="col-md-6" style=" background-color:#ddd; margin:5px; width:100%; ">
+
+
+
+
+<label> Id:</label>{{ ride.id }} </br>
+<label>From:</label> {{ ride.from_place }} </br>
+<label>To:</label>{{ ride.to_place }} </br>
+<label>Date:</label>{{ ride.date }} </br>
+ <label> Created Date:</label>{{ ride.created_date.strftime('%Y-%m-%d') }} </br> 
+
+  
+	 
+
+</div>
+{% else %}
+	<div class="col-md-6" style= " width:100%; ">
+	<p> It seems that you have not done any rides in Udio yet</p>
+	</div>
+{% endfor %} 
+<br/>
+<br/>
+<h4>Packages</h4>
+{% for s in packages %}
+	<div class="col-md-6" style=" background-color:#ddd; margin:5px; width:100%; ">
+
+
+
+
+<label> Id:</label>{{ s.id }} </br>
+<!-- <label>From:</label> {{ s.from_place }} </br>
+<label>To:</label>{{ s.to_place }} </br> -->
+<label>Date:</label>{{ s.date.strftime('%Y-%m-%d') }} </br>
+<label>Requested Ride:</label>{{s.ride_id}} </br>
+
+  
+	 
+
+</div>
+{% else %}
+<div class="col-md-6" style= " width:100%; ">
+	<p> No packages sent</p>
+</div>
+
+{% endfor %}
+
+ 
+
+ 
+{% endblock %}

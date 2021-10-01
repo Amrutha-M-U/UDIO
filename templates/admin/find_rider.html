@@ -1,0 +1,24 @@
+{% extends "admin/admin.html" %}
+
+{% block Rides_List %}
+
+<h3> Rides Available </h3>
+{% for ride in riders %}
+<div class="col-md-6" style="background-color:#ddd;margin:5px; width:100%; ">
+
+
+	<h2> {{ ride.firstname }} </h2>
+	<br>
+	<h3> Date: {{ ride.date }} </h3>
+	<br>
+	<h3>Vehicle : {{ ride.vehicle}} </h3>
+	<br>
+
+</div>
+{% else %}
+	<div class="col-md-6" style= " width:100%; ">
+	<p> It seems that no rider has been found in your route </p>
+	</div>
+
+{% endfor %}
+{% endblock %}

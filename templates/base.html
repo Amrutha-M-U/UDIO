@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	{% if title %}
+		<title> {{ title }} </title>
+		{% else %}
+		<title> Udio</title>
+
+		{% endif %}
+</head>
+<body>
+	<div style="text-align:center">
+	<h1> Welcome to Udio </h1>
+
+	{% block content %} {% endblock %}
+</div>
+</body>
+
+</html>

@@ -1,0 +1,14 @@
+{% extends "admin/admin.html" %}
+
+{% block request_sent %}
+
+<h3 style="padding:15px;"> Request Sent </h3>
+ 
+<div class="col-md-6" style="background-color:#ddd;margin:5px; width:100%; ">
+
+	<img src="{{ url_for('static', filename='home/tick.png') }}" />
+</div>
+ 	 
+
+ 
+{% endblock %}

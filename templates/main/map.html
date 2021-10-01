@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>Directions service</title>
+    <style>
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      #map {
+        height: 100%;
+      }
+        
+      }
+    </style>
+  </head>
+  <body>
+  <div style="text-align:center;"> <form method="post"><label>ID:</label> {{ id }} <br> <input type="submit" value="Update"> </div></form>
+    <div id="map"></div>
+    <script>
+        var rider = {lat: 8.893, lng: 76.614 };   // Coordinates of rider location
+        //var rider = {lat: {{ geo_rider_lat }}, lng: {{ geo_rider_lon }} };   // Coordinates of rider location
+
+        function initMap() {
+        var destination = {lat: {{ geo_to_lat }}, lng: {{ geo_to_lon }} };   // Coordinates of destination location
+        var directionsService = new google.maps.DirectionsService;
+        var directionsDisplay = new google.maps.DirectionsRenderer;
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 7,
+          center: rider
+        });
+        directionsDisplay.setMap(map);
+        var marker = new google.maps.Marker({
+        position: destination,
+        map: map,
+        label: 'C',
+        title: 'Destination'
+        });
+        calculateAndDisplayRoute(directionsService, directionsDisplay);
+      }
+
+      var source = {lat: {{ geo_from_lat }}, lng: {{ geo_from_lon }} };  // Coordinates of source location
+      
+
+      function calculateAndDisplayRoute(directionsService, directionsDisplay) {
+        directionsService.route({
+          origin: source,
+          destination: rider,
+          travelMode: google.maps.TravelMode.DRIVING
+        }, function(response, status) {
+          if (status === google.maps.DirectionsStatus.OK) {
+            directionsDisplay.setDirections(response);
+          } else {
+            window.alert('Directions request failed due to ' + status);
+          }
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAWfhPgszPRIXtlbHpDozw5n_4RZRcAwVk&callback=initMap">
+    </script>
+  </body>
+</html>

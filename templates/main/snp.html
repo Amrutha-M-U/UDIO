@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>UDIO SIGNUP</title>
+	<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700|Lato:400,100,300,700,900' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/kk.css') }}">
+
+</head>
+<body>
+	<script type="text/javascript">
+	function validateForm() 
+	{
+		var x=document.form["submission"]
+	}
+	</script>
+	<div class="container">
+		<div class="top">
+			<h1 id="title" class="hidden">ARE YOU A <span id="logo"><b><b>NEWBIE ?</br>START </span></b></b>HERE</h1>
+		</div>
+		<div class="login-box animated fadeInUp">
+			<div class="box-header">
+				<h2>Sign Up</h2>
+			</div>
+			<div class="labels" style="margin-top: 39px;">
+	<form method='post' name="signupform" onsubmit="return validateForm()" enctype="multipart/form-data">
+				<div class="labelTop" for="firstname" style="margin-top: 2%">Firstname<br/></div> 
+				<div class="labelTop" for="lastname" style="margin-top: 8.8%">lastname<br/></div>
+				<div class="labelTop" for="dob"style="margin-top: 8.8%">Date of birth<br/></div>
+				<div class="labelTop" for="username" style="margin-top: 8.8%">Username<br/></div>
+				<div class="labelTop" for="password"style="margin-top: 8.8%">Password<br/></div>
+				<div class="labelTop" for="confirm_password"style="margin-top: 8.8%">Confirm Password<br/></div>
+				<div id="add" for="address"style="margin-top: 8.8%;margin-bottom: 161px">Address<br/></div>
+				<div class="labelBottom" for="country">Country<br/></div>
+				<div class="labelBottom" for="file">Upload Profile image (jpg. size<100kb) <br/></div>
+
+				<div class="labelBottom" for="country" style="margin-top: 8.8%">Licence no<br/></div>
+				<div class="labelBottom" for="state"style="margin-top: 8.8%">State<br/></div>
+				<div class="labelBottom" for="district"style="margin-top: 8.8%">District<br/></div>
+				<div class="labelBottom" for="pin"style="margin-top: 8.8%">Pin<br/></div>
+				<div class="labelBottom" for="email"style="margin-top: 8.8%">E-mail<br/></div>
+				<div class="labelBottom" for="mobilenumber"style="margin-top: 8.8%">Mobile Number<br/></div>
+			</div>
+			<div class="inputs" style="position: relative; float: left; margin-top: 39px; height: 78%;">
+				<input type="text" id="firstname"  name="firstname" size="60"><br/>
+				<input type="text" id="lastname" name="lastname" size="60"><br/>
+				<input type="date" id="dob" name="dob" size="60"><br/>
+				<input type="text" id="username" name="username" size="60"><br/>
+				<input type="password" id="password" name="password" size="60"><br/>
+				<input type="confirmpassword" name="confirm" id="confirmpassword" size="60"><br/>
+				<textarea id="Address" name="address" ></textarea><br/>
+				<input type="text" id="country" name="country"  size="60"><br/>
+				<input type="file" id="upload_file" name="file_upload"  size="60" placeholder="JPG IMAGE"><br/>
+
+				<input type="text" id="licence" name="licence"  size="60"><br/>
+				<input type="text" id="state" name="state" size="60"><br/>
+				<input type="text" id="District" name="district" size="60"><br/>
+				<input type="text" id="pin" name="pin" size="60"><br/>
+				<input type="email" id="email" name="email" size="60"><br/>
+				<input type="text" id="mobilenumber" name="mobile" size="60"><br/>
+			</div>
+            	<button type="submit" style="margin-top:40px">signup<a href="#signin"></a></button>
+			</form>
+				<br/>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+{% extends "admin/admin.html" %}
+
+{% block reviews %}
+
+<h3 style="padding:15px;"> Delivery history </h3>
+<div style="background-color:#bbb">
+<h4 style="padding:15px;"> Rides</h4>
+{% for ride in rides %}
+ 
+<div class="col-md-5" style=" background-color:#ddd; margin:5px;   ">
+
+
+
+
+<label> Id:</label>{{ ride.id }} </br>
+<label>From:</label> {{ ride.from_place }} </br>
+<label>To:</label>{{ ride.to_place }} </br>
+<label>Date:</label>{{ ride.date }} </br>
+<label>Rating:</label>{{ ride.review }} </br>
+	 
+
+</div>
+{% else %}
+	<div class="col-md-5" style= " width:100%; ">
+	<p> It seems that you have not done any rides in Udio yet</p>
+	</div>
+
+{% endfor %}
+</div>
+ 	 
+ 	
+ 
+
+
+ 
+{% endblock %}

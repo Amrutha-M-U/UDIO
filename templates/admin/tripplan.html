@@ -1,0 +1,71 @@
+{% extends "admin/admin.html" %}
+{% block tripplan %}
+<div class="col-md-3" style="text-align:center;">
+	
+	<style type="text/css"> input { width:60%; }</style>
+	 <style type="text/css">
+    .container {
+
+        width: 500px;
+        clear: both;
+    }
+    .container input {
+        width: 100%;
+        clear: both;
+    }
+     .container select {
+        width: 100%;
+        clear: both;
+    }
+    .container h4 {
+        width: 100%;
+        clear: both;
+    }
+
+    </style><div class="container" >
+    <h4> Create Ride </h4>
+	<form method="post">
+
+		<label>From place:</label><select name="from_place" style="width:100%">
+  				 					<option value="alappuzha">Alappuzha</option>
+   									<option value="ernakulam">Ernakulam</option>
+  									 <option value="idukki">Idukki</option>
+ 									 <option value="kannur">Kannur</option>
+ 									 <option value="kasargod">Kasargod</option>
+ 									 <option value="kollam">Kollam</option>
+ 									 <option value="kottayam">Kottayam</option>
+ 									 <option value="kozhikode">Kozhikode</option>
+ 									 <option value="malappuram">Malappuram</option>
+ 									 <option value="palakkad">Palakkad</option>
+ 									 <option value="pathanamthitta">Pathanamthitta</option>
+ 									 <option value="trivandrum">Trivandrum</option>
+ 									 <option value="thrissur">Thrissur</option>
+ 									 <option value="wayanad">Wayanad</option>
+								  </select>
+<br>
+		<label>To place:</label>  <select name="to_place" style="width:100%">
+  				 					<option value="alappuzha">Alappuzha</option>
+   									<option value="ernakulam">Ernakulam</option>
+  									 <option value="idukki">Idukki</option>
+ 									 <option value="kannur">Kannur</option>
+ 									 <option value="kasargod">Kasargod</option>
+ 									 <option value="kollam">Kollam</option>
+ 									 <option value="kottayam">Kottayam</option>
+ 									 <option value="kozhikode">Kozhikode</option>
+ 									 <option value="malappuram">Malappuram</option>
+ 									 <option value="palakkad">Palakkad</option>
+ 									 <option value="pathanamthitta">Pathanamthitta</option>
+ 									 <option value="trivandrum">Trivandrum</option>
+ 									 <option value="thrissur">Thrissur</option>
+ 									 <option value="wayanad">Wayanad</option>
+								  </select>
+<br>
+		<label>Date:</label><input type="date" name="date"><br>
+		<label>Vehicle:</label><input type="text" name="vehicle"><br>
+		<label>Extra info:</label><input type="text" name="extra_info"><br>
+		<label>Time:</label><input type="time" name="time"><br>
+		<input type="submit">
+	</form>
+</div>
+</div>
+{% endblock %}

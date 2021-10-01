@@ -1,0 +1,55 @@
+{% extends "admin/admin.html" %}
+
+{% block delivery %}
+
+<h3 style="padding:15px;"> Delivery </h3>
+ 
+
+<h4> Rides </h4>
+{% for ride in rides %}
+ 
+<div class="col-md-4" style=" background-color:#ddd; margin:5px;  ">
+
+
+
+
+<label> Id:</label>{{ ride.id }} </br>
+<label>From:</label> {{ ride.from_place }} </br>
+<label>To:</label>{{ ride.to_place }} </br>
+<label>Date:</label>{{ ride.date }} </br>
+<label>Rating:</label>{{ ride.review }} </br>
+	 
+
+</div>
+{% else %}
+	<div class="col-md-6" style= " width:100%; ">
+	<p> It seems that you have not done any rides in Udio yet</p>
+	</div>
+{% endfor %} 
+<br/>
+<br/>
+<h4>Packages</h4>
+{% for s in sender %}
+	 
+<div class="col-md-4" style=" background-color:#ddd; margin:5px;  ">
+
+
+
+
+<label> Id:</label>{{ ride.id }} </br>
+<label>From:</label> {{ ride.from_place }} </br>
+<label>To:</label>{{ ride.to_place }} </br>
+<label>Date:</label>{{ ride.date }} </br>
+<label>Rating:</label>{{ ride.review }} </br>
+	 
+
+</div>
+{% else %}
+<div class="col-md-4" style= " width:100%; ">
+	<p> No packages sent</p>
+</div>
+
+{% endfor %}
+
+ 
+{% endblock %}

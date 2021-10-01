@@ -1,0 +1,16 @@
+
+{% extends "base.html" %}
+{% block content %}
+	<div style="text-align:center">
+		<h2> Search for Riders </h2>
+	<form method="post">
+        {{form.hidden_tag() }}
+		<label> From </label> {{ form.from_text }}
+	<br>
+	<label> To </label> {{ form.to_text }} 
+	<br>
+
+	<input name="submit_direction" value="Search" type="submit">
+</form>
+</div>
+{% endblock %}

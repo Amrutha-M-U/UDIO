@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>UDIO INTRO</title>
+	<meta  charset='UTF-8'>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/style.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+	<link href='https://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700|Lato:400,100,300,700,900' rel='stylesheet' type='text/css'>
+	
+	<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+</head>
+
+<body id="body">
+
+	<!-- <div id="layer1" class="layer1_class" ><img class="loadBackground" src="{{ url_for('static',filename='images/white.png' ) }}"><img class="loadGif" src="{{ url_for('static',filename='images/Intersection.gif') }}"></div>
+ -->
+	<div id="layer2"  class="layer2_class">
+
+		<div class="background" id="background"><img src="{{ url_for('static', filename='images/bg1.gif') }}"></div>	
+
+		<header class="header-nav" id="header-nav">
+		
+  					<div class="header-logo"><a href="#home">UDIO</a></div>
+
+  					<div class="nav-right">
+  						<div class="header-signup"><a href="#layer2">Home</a></div>
+  						<div class="header-login"><a href="#login">Login</a></div>
+  						<div class="header-sender"><a href="#about">About Us</a></div>
+  						<div class="header-about"><a href="#contact">Contact Us</a></div>
+  						
+					</div>			
+		</header>
+
+		<div class="login" id="login">
+			<img src="{{ url_for('static',filename='images/login.png') }}">
+		</div>
+
+		<div class="loginBody">
+				<div class="containers">
+					<div class="top">
+						<h1 id="title" style="padding-top:100px;">ARE YOU ONE OF <span id="logo"><b><b>US?<br>WELCOME </b></b></span>BACK</h1>
+					</div>
+					<div class="login-box animated fadeInUp">
+						<div class="box-header">
+							<form method="post">
+							<div>Log In</div>
+						</div>
+						<label for="username">Username</label>
+						<br/>
+						<input type="text" id="username" name='username' size="45">
+						<br/>
+						<label for="password">Password</label>
+						<br/>
+						<input type="password" id="password"  name='password' size="45">
+						<br/>
+						<button type="submit">Sign In</button>
+						<br/>
+						</form>
+						<!-- <a href="#"><p class="small">FORGOT YOUR PASSWORD ?</p></a>kjjjjjjjjjjj -->
+						<a href="/reg"><p >SIGN UP</p></a>
+					</div>
+				</div>
+		</div>
+
+		<div class="aboutcontainer" id="about" >
+			<div class="aboutus_title">
+				<h1 id="title" style="padding-top:100px;">ABOUT US </h1>
+			</div>
+			<div class="aboutus">
+				<img src="{{ url_for('static',filename='images/about_container.png') }}">
+			</div>
+			<div class="aboutsbody" style="position: relative; top: -496px; width: 98%; left: 16%;">
+				<p style="color: white;width:70%;left:15%;">
+					7 continents, 196 countries with over 7 billion individuals, our world is a vast community which hangs in the balance of a complex network which connects each and every one of us. The absence of an effective medium for transport of goods poses a day to day challenge for everyone, “effective” being the key aspect which requires the mode to be swift, accurate and secure. The existing systems involve a time consuming and tedious process. <br>
+					Our goal is to create a peer to peer network for package delivery. We achieve this by routing the package in an optimized way. Instead of involving a 3rd party agency we link 	the sender and receiver via traveler who happens to be going on the same way. The traveler would have already signed up with our program by providing his or her credentials and he/she receives payment for each drop made. Through our program the client gets to dispatch the item through a larger pool of transporters and our end makes sure that the best one is selected. In this manner we are not limited on human resource as in the case of traditional delivery systems and we will never be overwhelmed by the sheer volume of deliveries to be made.
+				</p>
+			</div>
+		</div>
+
+		<div class="contact_container" id="contact">
+			<div class="contact_title">
+				<h1 id="title"><b>CONTACT</b>  US</h1>
+			</div>
+			<div class="contact_body">
+				<div class="incont" style="color:white;">
+					<b style="font-weight: bold;">Udio Pvt. Ltd.</b> <br>
+					Government Engineering College , <br>
+					Ramavarmapuram PO ,<br>
+					Thrissur - 680009<br>
+					Phone : +91-9446051242 <br>
+					Email : contact@udio.com <br>
+				</div>
+			</div>
+		</div>
+
+	</div>
+		<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+	<script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+
+	<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+	<script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+	
+</body>
+</html>
+
+

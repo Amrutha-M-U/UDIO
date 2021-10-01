@@ -1,0 +1,436 @@
+body,html{
+	
+	position: relative;
+	width: 1368px;
+  height: 3000px;
+	margin: 0px 0px 0px 0px;
+  overflow-x: hidden;
+  overflow-y:scroll; 
+}
+
+/* == LOADING SCREEN == */ 
+
+.layer1_class { 
+  position: absolute; 
+  z-index: 1; 
+  width: 1370px;
+  height: 300px auto; 
+  visibility: visible; 
+  overflow-y: hidden;
+  background-color: white;
+}
+.loadGif{ 
+  position: fixed; 
+  z-index: 2; 
+  right: 650px;
+  top: 300px;
+  visibility: visible; 
+  overflow-y: hidden;
+
+}
+.loadBackground{
+  position: relative;
+  z-index: 1; 
+  width: 1300px;
+  height: 3000px; 
+  visibility: visible; 
+  overflow-y: hidden;
+
+}
+ 
+/* == END LOADING SCREEN == */
+
+
+.layer2_class { 
+  position: relative;
+  width: 1368px;
+  height: 3000px; 
+  margin: 0px 0px 0px 0px;
+  overflow-x: hidden;
+  overflow-y:hidden; 
+  z-index: 0;  
+  visibility: hidden;
+  -webkit-transition: background-image 2s;
+  transition: background-image 2s;
+
+}
+   
+
+.background{
+
+	position: absolute;
+	width: 100%;
+  height: 700px;
+  margin: 0px 0px 0px 0px;
+	overflow-x: hidden;
+  overflow-y:hidden; 
+  	
+}
+
+header,.header-nav{
+
+	position: fixed; 
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	width: 100%;
+	height: 73px;
+	text-decoration: none;
+  box-sizing:initial;
+}
+
+.header-navScroll{
+
+  position: fixed; 
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  width: 100%;
+  height: 60px;
+  z-index: 5;
+  text-decoration: none;
+  background-color:  #404040;
+   -webkit-transition: background-color 0.2s;
+  transition: background-color 0.2s;
+}
+.header-navScrollLogin{
+
+  position: fixed; 
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  opacity: 0.5;
+  width: 100%;
+  height: 60px;
+  z-index: 5;
+  text-decoration: none;
+  background-color:  #404040;
+   -webkit-transition: background-color 0.2s;
+  transition: background-color 0.2s;
+}
+
+.header-logo a{
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 10px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 220%
+}
+.header-logo a:hover{
+  float: left;
+  color: #00b8e6;
+  text-align: center;
+  padding: 10px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 220%
+}
+
+.nav-right{
+  margin: 0px 0px 0px 900px;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  font-size: 110%;
+  box-sizing:initial;
+}
+
+.header-signup a{
+  float: left;
+  color: white;
+  height: 32px;
+  text-align: center;
+  padding: 16px 16px;
+  text-decoration: none;
+  display: block;
+  box-sizing:initial;
+  
+}
+.header-signup a:hover{
+  float: left;
+  color: white;
+  background-color:black; 
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  display: block;
+  -webkit-transition: background-color 0.2s;
+  transition: background-color 0.2s;
+  
+}
+.header-login a{
+  float: left;
+  color: white;
+   height: 32px;
+  text-align: center;
+  padding: 16px 16px;
+  text-decoration: none;
+  display: block;
+  box-sizing:initial;
+}
+.header-login a:hover{
+  float: left;
+  color: white;
+  background-color:black; 
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  display: block;
+  -webkit-transition: background-color 0.2s;
+  transition: background-color 0.2s;
+  
+}
+.header-rider a{
+  float: left;
+  color: white;
+  height: 32px;
+  text-align: center;
+  padding: 16px 16px;
+  text-decoration: none;
+  display: block;
+  box-sizing:initial;
+}
+.header-rider a:hover{
+  float: left;
+  color: white;
+  background-color:black; 
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  display: block;
+  -webkit-transition: background-color 0.2s;
+  transition: background-color 0.2s;
+  box-sizing:none;
+}
+.header-sender a{
+  float: left;
+  color: white;
+  height: 32px;
+  text-align: center;
+  padding: 16px 16px;
+  text-decoration: none;
+  display: block;
+  box-sizing:initial;
+}
+.header-sender a:hover{
+  float: left;
+  color: white;
+  background-color:black; 
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  display: block;
+  -webkit-transition: background-color 0.2s;
+  transition: background-color 0.2s;
+  
+}
+.header-about a{
+  float: left;
+  color: white;
+  height: 32px;
+  text-align: center;
+  padding: 16px 16px;
+  text-decoration: none;
+  display: block;
+  box-sizing: initial;
+}
+.header-about a:hover{
+  float: left;
+  color: white;
+  background-color:black; 
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  display: block;
+  -webkit-transition: background-color 0.2s;
+  transition: background-color 0.2s;
+  
+}
+
+  
+/*=========================================================================SIGNUP====================================================================*/
+
+.login{
+
+  position: relative;
+  width: 100%;
+  height: 700px;
+  top: 700px;
+  z-index: -1;
+  margin: 0px 0px 0px 0px;
+  overflow-x: hidden;
+  overflow-y:hidden; 
+
+}
+.loginBody{
+  position: relative;
+  z-index: 1;
+}
+/* Typography */
+h1#title {
+  font-family: 'Lato', sans-serif;
+  font-weight:300;
+  font-size: 2.9em;
+  color: white;
+  text-shadow: 0 0 10px rgba(0,0,0,0.8);
+  margin: 0 auto;
+  padding-top: 50px;
+  max-width: 800px;
+  text-align: center;
+  position: relative;
+  top: 0px;
+}
+
+h1#title span span {
+  font-weight:300 ;
+}
+
+ h2{
+  text-transform: uppercase;
+  color: white;
+  font-weight: 400;
+  letter-spacing: 1px;
+  font-size: 1.4em;
+  line-height: 2.8em;
+  font-family: "lato",sans-serif;
+  padding-top: 16px;
+  font-size: 25px;
+  font-weight: 400;
+}
+#signup{
+  //color: white;
+  font-weight: 400;
+  letter-spacing: 1px;
+  font-size: 1.4em;
+  line-height: 1.8em;
+  text-decoration: none;
+  color: #FFF8DC;
+  transition: all 0.2s linear;
+  font-family: "lato",sans-serif;
+
+}
+#signup:hover{
+   color: #FAAFBE;
+   text-decoration: none;
+}
+
+a {
+  text-decoration:none;
+  font-size:18px; 
+  color:  #FFF8DC;
+}
+
+a:hover {
+  color:#2eb8b8;
+  text-decoration: none;
+}
+
+p.small {
+  font-size: 15px;
+  margin-top: 22px;
+  color: white;
+  font-family: "lato",sans-serif;
+  padding-left: 10px;
+}
+
+
+/* Layout */
+.containers {
+  width: 100%;
+  padding-left: 0px;
+}
+
+.top {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background: -moz-linear-gradient(top,  rgba(0,0,0,0.6) 0%, rgba(0,0,0,0) 100%); 
+  background: -webkit-linear-gradient(top,  rgba(0,0,0,0.6) 0%,rgba(0,0,0,0) 100%); 
+  background: linear-gradient(to bottom,  rgba(0,0,0,0.6) 0%,rgba(0,0,0,0) 100%); 
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#99000000', endColorstr='#00000000',GradientType=0 ); 
+}
+
+.login-box {
+  background-color: #100d0a;
+  opacity: .5;
+  max-width: 400px;
+  margin: 0 auto;
+  position: relative;
+  top: 20px;
+  padding-bottom:30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 50px rgba(0,0,0,0.4);
+  text-align: center;
+}
+
+.login-box .box-header {
+  background-color: #4e4356;
+  opacity:1;
+  margin-top: 0;
+  border-radius: 15px 15px 0 0;
+  font-family: "lato",sans-serif;
+  height: 62px;
+  text-transform: uppercase;
+  color: white;
+  font-size: 25px;
+  padding-top: 12px;
+
+}
+
+.login-box label {
+  font-weight: 400;
+  font-size: .9em;
+  color: white;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  line-height: 2em;
+  margin-left: -2px;
+  text-align: left;
+  font-family: "lato",sans-serif;
+  padding-top: 25px;
+
+}
+
+.login-box input {
+  margin-bottom:0px;
+  max-width:700px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  font-size: .9em;
+  color:#000;
+  background-color: white;
+
+}
+
+.login-box input:focus {
+  outline:thick;
+  border-color:#660066;
+  transition: 0.5s;
+  color:black;
+}
+
+.login-box button{
+  margin-top: 30px;
+  border: 0;
+  border-radius: 2px;
+  color: white;
+  padding: 10px;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 0.7em;
+  letter-spacing: 1px;
+  background-color: #4e4356;
+  cursor:pointer;
+  outline: none;
+}
+
+.login-box button:hover {
+  opacity: 1;
+  transition: 0.5s;
+  background-color: #00cc66;
+  color:white;
+}
+.selected {
+  color:black!important;
+  transition: 0.5s;
+}

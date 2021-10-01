@@ -1,0 +1,55 @@
+{% extends "admin/admin.html" %}
+{% block selectRide %}
+	  
+	<div class="col-md-10" style="text-align:center;">
+			 <h3> Select route to send your package </h3>
+                <form name="place" method="post" a >
+                                  <label> From </label>
+
+                                  <select name="from_place" style="width:100%">
+  				 					<option value="alappuzha">Alappuzha</option>
+   									<option value="ernakulam">Ernakulam</option>
+  									 <option value="idukki">Idukki</option>
+ 									 <option value="kannur">Kannur</option>
+ 									 <option value="kasargod">Kasargod</option>
+ 									 <option value="kollam">Kollam</option>
+ 									 <option value="kottayam">Kottayam</option>
+ 									 <option value="kozhikode">Kozhikode</option>
+ 									 <option value="malappuram">Malappuram</option>
+ 									 <option value="palakkad">Palakkad</option>
+ 									 <option value="pathanamthitta">Pathanamthitta</option>
+ 									 <option value="trivandrum">Trivandrum</option>
+ 									 <option value="thrissur">Thrissur</option>
+ 									 <option value="wayanad">Wayanad</option>
+								  </select>
+
+
+                  <br>
+                  <label> To &nbsp &nbsp</label>
+                  <select name="to_place" style="width:100%">
+  				 					<option value="alappuzha">Alappuzha</option>
+   									<option value="ernakulam">Ernakulam</option>
+  									 <option value="idukki">Idukki</option>
+ 									 <option value="kannur">Kannur</option>
+ 									 <option value="kasargod">Kasargod</option>
+ 									 <option value="kollam">Kollam</option>
+ 									 <option value="kottayam">Kottayam</option>
+ 									 <option value="kozhikode">Kozhikode</option>
+ 									 <option value="malappuram">Malappuram</option>
+ 									 <option value="palakkad">Palakkad</option>
+ 									 <option value="pathanamthitta">Pathanamthitta</option>
+ 									 <option value="trivandrum">Trivandrum</option>
+ 									 <option value="thrissur">Thrissur</option>
+ 									 <option value="wayanad">Wayanad</option>
+								  </select>
+                  <br>
+                  <div class="input-group date" data-provide="datepicker">
+     <input type="date" class="form-control" name="date"> 
+    <div class="input-group-addon">
+        <span class="glyphicon glyphicon-th"></span>
+    </div>
+</div>
+                  <input type="submit" />
+                </form>
+    </div>
+{% endblock %}
