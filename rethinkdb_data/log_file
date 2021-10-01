@@ -1,0 +1,40 @@
+2016-03-16T22:21:40.388361045 10.066309s notice: Recursively removing directory /home/achu/Scripts/MiniProject/app/rethinkdb_data/tmp
+2016-03-16T22:21:40.417873093 10.095837s notice: Initializing directory /home/achu/Scripts/MiniProject/app/rethinkdb_data
+2016-03-16T22:21:40.418096965 10.096043s info: Creating a default database for your convenience. (This is because you ran 'rethinkdb' without 'create', 'serve', or '--join', and the directory '/home/achu/Scripts/MiniProject/app/rethinkdb_data' did not already exist or is empty.)
+2016-03-16T22:21:40.418158254 10.096104s notice: Running rethinkdb 2.2.4 (GCC 4.8.4)...
+2016-03-16T22:21:40.423674526 10.101624s notice: Running on Linux 3.19.0-26-generic x86_64
+2016-03-16T22:21:40.423805895 10.101752s notice: Loading data from directory /home/achu/Scripts/MiniProject/app/rethinkdb_data
+2016-03-16T22:21:40.706626592 10.384575s info: Automatically using cache size of 2235 MB
+2016-03-16T22:21:40.707328158 10.385274s notice: Listening for intracluster connections on port 29015
+2016-03-16T22:21:40.708101732 10.386047s notice: Listening for client driver connections on port 28015
+2016-03-16T22:21:40.708336640 10.386282s notice: Listening for administrative HTTP connections on port 8080
+2016-03-16T22:21:40.708341308 10.386287s notice: Listening on addresses: 127.0.0.1, 127.0.1.1, ::1
+2016-03-16T22:21:40.708342043 10.386287s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2016-03-16T22:21:40.708344571 10.386290s notice: Server ready, "hungarianhorntail_Lenovo_IdeaPad_Y500_rqz" 4fa4a7dd-a13e-4cb4-a048-007e61f02457
+2016-03-16T22:21:46.430273439 16.108219s info: Table b4b30e1a-96f2-45d7-b06b-6ba9646f6b51: Added replica on this server.
+2016-03-16T22:21:47.770521338 17.448467s info: Table b4b30e1a-96f2-45d7-b06b-6ba9646f6b51: Starting a new Raft election for term 1.
+2016-03-16T22:21:47.848101887 17.526048s info: Table b4b30e1a-96f2-45d7-b06b-6ba9646f6b51: This server is Raft leader for term 1. Latest log index is 0.
+2016-03-16T22:21:49.200272685 18.878219s info: Table 91c44a78-2d0f-4886-aa58-d1cd9b9cb96d: Added replica on this server.
+2016-03-16T22:21:50.856663945 20.534610s info: Table 91c44a78-2d0f-4886-aa58-d1cd9b9cb96d: Starting a new Raft election for term 1.
+2016-03-16T22:21:50.909842061 20.587788s info: Table 91c44a78-2d0f-4886-aa58-d1cd9b9cb96d: This server is Raft leader for term 1. Latest log index is 0.
+2016-03-16T22:21:53.012200813 22.690147s info: Table 54617f60-ef87-4be4-aab3-57598376bbbd: Added replica on this server.
+2016-03-16T22:21:54.062732175 23.740678s info: Table 54617f60-ef87-4be4-aab3-57598376bbbd: Starting a new Raft election for term 1.
+2016-03-16T22:21:54.138044292 23.815990s info: Table 54617f60-ef87-4be4-aab3-57598376bbbd: This server is Raft leader for term 1. Latest log index is 0.
+2016-03-16T22:22:02.831272514 32.509219s notice: A newer version of the RethinkDB server is available: 2.2.5. You can read the changelog at <https://github.com/rethinkdb/rethinkdb/releases>.
+2016-03-20T20:03:02.631013368 0.779506s notice: Running rethinkdb 2.2.4 (GCC 4.8.4)...
+2016-03-20T20:03:02.651619252 0.800108s notice: Running on Linux 3.19.0-26-generic x86_64
+2016-03-20T20:03:02.651721266 0.800207s notice: Loading data from directory /home/achu/Scripts/MiniProject/app/rethinkdb_data
+2016-03-20T20:03:02.933764641 1.082252s info: Automatically using cache size of 2345 MB
+2016-03-20T20:03:02.938907704 1.087393s notice: Listening for intracluster connections on port 29015
+2016-03-20T20:03:03.570032642 1.718519s notice: Listening for client driver connections on port 28015
+2016-03-20T20:03:03.570312156 1.718798s notice: Listening for administrative HTTP connections on port 8080
+2016-03-20T20:03:03.570315129 1.718800s notice: Listening on addresses: 127.0.0.1, 127.0.1.1, ::1
+2016-03-20T20:03:03.570316255 1.718802s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2016-03-20T20:03:03.570317725 1.718803s notice: Server ready, "hungarianhorntail_Lenovo_IdeaPad_Y500_rqz" 4fa4a7dd-a13e-4cb4-a048-007e61f02457
+2016-03-20T20:03:04.735443420 2.883929s info: Table 91c44a78-2d0f-4886-aa58-d1cd9b9cb96d: Starting a new Raft election for term 2.
+2016-03-20T20:03:04.834352246 2.982838s info: Table 54617f60-ef87-4be4-aab3-57598376bbbd: Starting a new Raft election for term 2.
+2016-03-20T20:03:04.942045048 3.090531s info: Table 91c44a78-2d0f-4886-aa58-d1cd9b9cb96d: This server is Raft leader for term 2. Latest log index is 3.
+2016-03-20T20:03:04.962715847 3.111202s info: Table 54617f60-ef87-4be4-aab3-57598376bbbd: This server is Raft leader for term 2. Latest log index is 3.
+2016-03-20T20:03:04.980562047 3.129048s info: Table b4b30e1a-96f2-45d7-b06b-6ba9646f6b51: Starting a new Raft election for term 2.
+2016-03-20T20:03:05.173678426 3.322165s info: Table b4b30e1a-96f2-45d7-b06b-6ba9646f6b51: This server is Raft leader for term 2. Latest log index is 3.
+2016-03-20T20:03:06.935202043 5.083688s notice: A newer version of the RethinkDB server is available: 2.2.5. You can read the changelog at <https://github.com/rethinkdb/rethinkdb/releases>.
